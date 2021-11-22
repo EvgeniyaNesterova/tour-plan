@@ -22,3 +22,37 @@
 @media (max-width: 768px)
   .container
     max-width: 576px
+  .navbar
+    &__search, &-menu,&__user
+      display: none
+  .menu
+    &-button
+      width: 16px
+      height: 11px
+      display: flex
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: $white
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+@media (max-width: 576px)
+  .container
+    max-width: 95%
+  .logo
+    width: 120px
+@media (max-width: 480px)
+  .container
+    max-width: 95%
+  .logo
+    width: 110px
+@media (max-width: 320px)
+  .container
+    max-width: 95%
+  .logo
+    width: 99px
