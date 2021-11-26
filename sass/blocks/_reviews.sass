@@ -1,0 +1,100 @@
+.reviews
+  padding: 40px 0 100px 0
+  &__title
+    font-size: 36px
+    line-height: 45px
+    font-style: normal
+    font-weight: 700
+    text-align: center
+    color: $text-color
+    text-transform: uppercase
+    margin-bottom: 70px
+    margin-top: 0
+  &-slider
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 731px
+      margin: auto
+      padding: 45px 60px 30px 64px
+      background-color: $white
+      border-radius: 8px
+      &::before
+        content: ''
+        position: absolute
+        left: 62px
+        top: 13px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+        color: #F2F2F2
+      &::after
+        content: ''
+        position: absolute
+        right: 62px
+        top: 118px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+        color: #F2F2F2
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position: center
+      border: none
+      background-color: transparent
+      cursor: pointer
+      z-index: 99
+      &::active
+        outline: none
+        box-shadow: none
+      &--prev
+        background-image: url(../img/reviews-arrow-prev.svg)
+        left: 0
+      &--next
+        background-image: url(../img/reviews-arrow-next.svg)
+        right: 0
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+      margin-bottom: 32px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-bottom: 9px
+    &__username
+      font-size: 12px
+      line-height: 15px
+      font-weight: 700
+      color: $primary
+      margin-top: 0
+      margin-bottom: 10px
+    &__date
+      font-size: 10px
+      line-height: 13px
+      color: $text-color
+      margin-bottom: 4px
+    &__rating-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 48px
+    &__text
+      max-width: 537px
+      font-size: 12px
+      line-height: 19px
+      text-align: justify
+      margin: auto

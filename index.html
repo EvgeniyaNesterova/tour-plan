@@ -15,11 +15,8 @@
     />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=4fbeac7a-2181-4d6d-918b-16c591c03913&lang=en_US"
-      type="text/javascript"
-    ></script>
-    <script type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=4fbeac7a-2181-4d6d-918b-16c591c03913&lang=en_US"></script>
+    <script>
       ymaps.ready(init);
       function init() {
         var myMap = new ymaps.Map("map", {
@@ -155,55 +152,54 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider hotel__slider">
-            <!-- Slider main container -->
-            <div class="swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="./img/Slide-1.jpg"
-                    alt="Grand Hilton Hotel"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="./img/Slide-2.jpg"
-                    alt="Grand Hilton Hotel"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="./img/Slide-3.jpg"
-                    alt="Grand Hilton Hotel"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="./img/Slide-4.jpg"
-                    alt="Grand Hilton Hotel"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="./img/Slide-5.jpg"
-                    alt="Grand Hilton Hotel"
-                  />
-                </div>
+          <div class="swiper hotel-slider hotel__slider">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="./img/Slide-1.jpg"
+                  alt="Grand Hilton Hotel"
+                />
               </div>
-              <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button--prev"></button>
-              <button class="slider-button slider-button--next"></button>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="./img/Slide-2.jpg"
+                  alt="Grand Hilton Hotel"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="./img/Slide-3.jpg"
+                  alt="Grand Hilton Hotel"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="./img/Slide-4.jpg"
+                  alt="Grand Hilton Hotel"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="./img/Slide-5.jpg"
+                  alt="Grand Hilton Hotel"
+                />
+              </div>
             </div>
-            <!-- /.swiper -->
+            <!-- If we need navigation buttons -->
+            <button
+              class="hotel-slider__button hotel-slider__button--prev"
+            ></button>
+            <button
+              class="hotel-slider__button hotel-slider__button--next"
+            ></button>
           </div>
-          <!-- /.slider hotel__slider-->
+          <!-- /.swiper -->
           <div class="hotel-booking">
             <div class="booking">
               <div class="booking__info">
@@ -275,6 +271,220 @@
       <!-- /.newsletter-container -->
     </section>
     <!-- /.newsletter -->
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">What people think about us</h2>
+        <div class="swiper reviews-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="./img/reviews-avatar.jpg"
+                    alt="Photo: Megan Fox"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Megan Fox</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <div class="reviews-slider__rating-wrapper">
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                    </div>
+                    <!-- /.rating-wrapper -->
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.review-slider__profile -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="./img/reviews-avatar-3.jpg"
+                    alt="Photo: Merry Bence"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Merry Bence</h3>
+                  <span class="reviews-slider__date">Stayed 15 Oct, 2021</span>
+                  <div class="reviews-slider__rating">
+                    <div class="reviews-slider__rating-wrapper">
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                    </div>
+                    <!-- /.rating-wrapper -->
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.review-slider__profile -->
+                <p class="reviews-slider__text">
+                  We have just spent two weeks on a wonderful honeymoon at this
+                  property back in October. Everything was smoothly perfect from
+                  day 1 till our checkout. We loved our room, it was well
+                  appointed, housekeeping did a great job leaving our room
+                  spotless clean each day. Service was immaculate, they
+                  remembered every small personal preference and consistently
+                  delivered and followed up on every request. Breakfast spread
+                  was great, the pool are had a wonderful ambience, and the
+                  location was also adequate for us.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="./img/reviews-avatar-4.jpg"
+                    alt="Photo: Tom Smith"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Tom Smith</h3>
+                  <span class="reviews-slider__date">Stayed 3 Nov, 2020</span>
+                  <div class="reviews-slider__rating">
+                    <div class="reviews-slider__rating-wrapper">
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                    </div>
+                    <!-- /.rating-wrapper -->
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.review-slider__profile -->
+                <p class="reviews-slider__text">
+                  I stayed at double tree in patong for one week, my first solo
+                  trip (phuket sandbox). The staff were all so lovely,
+                  especially Timmy at the pool bar!!! Can’t fault this hotel,
+                  lovely breakfast, very clean rooms and comfortable stay. Hotel
+                  reception willing to help with everything, and check in was a
+                  smooth process even with the sandbox scheme. Ideal location
+                  for bangla road and access to the sights and tours available
+                  at phuket. Highest recommend.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="./img/reviews-avatar-2.jpg"
+                    alt="Photo: Clara Rogers"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Clara Rogers</h3>
+                  <span class="reviews-slider__date">Stayed 26 Apr, 2021</span>
+                  <div class="reviews-slider__rating">
+                    <div class="reviews-slider__rating-wrapper">
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                    </div>
+                    <!-- /.rating-wrapper -->
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.review-slider__profile -->
+                <p class="reviews-slider__text">
+                  An amazing stay at the hotel in October. Applying for the COE
+                  was a long process but the hotel did everything they could to
+                  provide us with the information we needed. Once we arrived,
+                  the service at the hotel was out of this world. They couldn't
+                  do enough for you. The cookie on arrival was a particular
+                  highlight, so good that we bought cookies everyday. timmy who
+                  worked in the pool bar and at breakfast, made sure we didn't
+                  have to wait for a drink and the drinks were delicious. Top
+                  service from him and he was so friendly too. Reception staff
+                  were excellent, they provided a fantastic service. After a
+                  cooking class, we brought home food and room service heated up
+                  our leftovers for us! We stayed in the swim up pool access
+                  rooms which were very convenient for pool access. The
+                  breakfast buffet was great too. The hotel booked transfers,
+                  resturants and PCR tests. Location is excellent, located next
+                  to the beach and shops and restaurants, everything is on the
+                  doorstep. Bangla Road is a 4 mins walk away. I cannot wait to
+                  visit again.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="./img/reviews-avatar-1.jpg"
+                    alt="Photo: Boris Kozlov"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Boris Kozlov</h3>
+                  <span class="reviews-slider__date">Stayed 7 March, 2021</span>
+                  <div class="reviews-slider__rating">
+                    <div class="reviews-slider__rating-wrapper">
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                      <img src="./img/Star.svg" alt="star" class="star" />
+                    </div>
+                    <!-- /.rating-wrapper -->
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.review-slider__profile -->
+                <p class="reviews-slider__text">
+                  I just returned from a two month stay in Phuket. My time there
+                  was enhanced by my stay at the banthai hotel. The food at the
+                  buffet breakfast was both plentiful and delicious. My stay was
+                  further enhanced by the hotel's friendly and efficient staff
+                  and more particularly by Usa, who is the director of rooms,
+                  and who personally saw to my well-being.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+          <button
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
+        </div>
+        <!-- /.swiper reviews-slider -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.reviews -->
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
