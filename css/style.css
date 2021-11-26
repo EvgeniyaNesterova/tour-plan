@@ -661,6 +661,13 @@ img {
   z-index: 10;
 }
 
+.swiper-slide__image {
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .slider {
   width: 728px;
   height: 450px;
@@ -1015,7 +1022,7 @@ img {
     width: 99px;
   }
   .slider {
-    height: 180px;
+    height: 179px;
   }
 }
 
