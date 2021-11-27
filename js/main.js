@@ -28,3 +28,8 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     onlyInViewport: true,
   },
 });
+$(window).scroll(function() {
+
+  var st = $(this).scrollTop();
+  console.log(st); 
+});
