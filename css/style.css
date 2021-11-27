@@ -616,6 +616,13 @@ img {
   z-index: 10;
 }
 
+.hotel-slider__image {
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .hotel-slider__button {
   position: absolute;
   top: 50%;
@@ -698,13 +705,6 @@ img {
 
 .rating__number {
   font-size: 10px;
-}
-
-.swiper-slide__image {
-  min-width: 100%;
-  min-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .booking {
@@ -962,7 +962,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 731px;
+  max-width: 731px;
   margin: auto;
   padding: 45px 60px 30px 64px;
   background-color: #FFFFFF;
@@ -1093,7 +1093,7 @@ img {
   .hotel__slider {
     width: 590px;
   }
-  .swiper-slide__image {
+  .hotel__slider__image {
     height: 100%;
   }
 }
@@ -1142,6 +1142,12 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .hotel-slider__image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .booking {
     width: 340px;
     padding-right: 23px;
@@ -1152,17 +1158,25 @@ img {
   .map {
     width: 340px;
   }
-  .swiper-slide__image {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .newsletter {
     padding: 92px 0 93px 0;
   }
   .newsletter-container {
     max-width: 700px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    max-width: 579px;
+  }
+  .reviews-slider__avatar {
+    margin-bottom: 7px;
+  }
+  .reviews-slider__button {
+    top: 170px;
   }
 }
 
@@ -1273,6 +1287,44 @@ img {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 245px;
+    text-align: center;
+  }
+  .reviews-slider__item {
+    padding-right: 29px;
+    padding-bottom: 36px;
+    padding-left: 33px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 30px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-left: -88px;
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+    margin-right: -88px;
+  }
+  .reviews-slider__text {
+    max-width: 219px;
+  }
+  .reviews-slider__profile {
+    margin-bottom: 34px;
   }
 }
 

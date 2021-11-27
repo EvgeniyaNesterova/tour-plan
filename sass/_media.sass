@@ -4,8 +4,6 @@
   .hotel
     &__slider
       width: 590px
-  .swiper
-    &-slide
       &__image
         height: 100%
 @media (max-width: 992px)
@@ -36,6 +34,11 @@
       margin-bottom: 30px
     &-booking
       flex-direction: row
+    &-slider
+      &__image
+        height: 100%
+        width: 100%
+        object-fit: cover
   .booking
     width: 340px
     padding-right: 23px
@@ -43,16 +46,22 @@
       margin-bottom: 14px
   .map
     width: 340px
-  .swiper
-    &-slide
-      &__image
-        height: 100%
-        width: 100%
-        object-fit: cover
   .newsletter
     padding: 92px 0 93px 0
     &-container
       max-width: 700px
+  .reviews
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &-slider
+      &__item
+        max-width: 579px
+      &__avatar
+        margin-bottom: 7px
+      &__button
+        top: 170px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -118,6 +127,36 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 42px
+      margin-left: auto
+      margin-right: auto
+      max-width: 245px
+      text-align: center
+    &-slider
+      &__item
+        padding-right: 29px
+        padding-bottom: 36px
+        padding-left: 33px
+        &::after, &::before
+          display: none
+      &__button
+        top: 30px
+        &--prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -88px
+        &--next
+          right: 50%
+          transform: translate(50%, 0)
+          margin-right: -88px
+      &__text
+        max-width: 219px
+      &__profile
+        margin-bottom: 34px
 @media (max-width: 576px)
   .container
     max-width: 95%
