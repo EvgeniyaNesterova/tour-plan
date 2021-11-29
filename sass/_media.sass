@@ -118,7 +118,6 @@
   .map
     width: 100%
   .newsletter
-    padding: 33px 0 83px 0
     &-container
       max-width: 576px
       flex-direction: column
@@ -127,15 +126,30 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+@media (max-width: 576px)
+  .container
+    max-width: 95%
+  .logo
+    width: 120px
+  .hotel
+    &__slider
+      height: 300px
+      margin-bottom: 20px
+  .newsletter
+    &-container
+      max-width: 95%
   .reviews
     &__title
       font-size: 18px
       line-height: 23px
       margin-bottom: 42px
-      margin-left: auto
       margin-right: auto
-      max-width: 245px
+      margin-left: auto
       text-align: center
+@media (max-width: 485px)
+  .reviews
+    &__title
+      max-width: 90%
     &-slider
       &__item
         padding-right: 29px
@@ -154,21 +168,9 @@
           transform: translate(50%, 0)
           margin-right: -88px
       &__text
-        max-width: 219px
+        max-width: 100%
       &__profile
         margin-bottom: 34px
-@media (max-width: 576px)
-  .container
-    max-width: 95%
-  .logo
-    width: 120px
-  .hotel
-    &__slider
-      height: 300px
-      margin-bottom: 20px
-  .newsletter
-    &-container
-      max-width: 95%
 @media (max-width: 480px)
   .container
     max-width: 279px
@@ -177,12 +179,22 @@
   .hotel
     &__slider
       height: 179px
+    &-booking
+      min-height: 403px
+  .booking
+    margin-bottom: 20px
+  .map
+    height: 173px
+    overflow: hidden
   .newsletter
+    padding: 76px 0 83px 0
     &-container
       max-width: 279px
     &-call
       font-size: 20px
       line-height: 25px
+    &__call
+      margin-bottom: 40px
     &-title
       font-size: 30px
       line-height: 38px

@@ -1087,6 +1087,35 @@ img {
   margin: auto;
 }
 
+.activities {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.activities__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1270,9 +1299,6 @@ img {
   .map {
     width: 100%;
   }
-  .newsletter {
-    padding: 33px 0 83px 0;
-  }
   .newsletter-container {
     max-width: 576px;
     -webkit-box-orient: vertical;
@@ -1289,14 +1315,35 @@ img {
   .subscribe {
     width: 100%;
   }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 95%;
+  }
+  .logo {
+    width: 120px;
+  }
+  .hotel__slider {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .newsletter-container {
+    max-width: 95%;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 42px;
-    margin-left: auto;
     margin-right: auto;
-    max-width: 245px;
+    margin-left: auto;
     text-align: center;
+  }
+}
+
+@media (max-width: 485px) {
+  .reviews__title {
+    max-width: 90%;
   }
   .reviews-slider__item {
     padding-right: 29px;
@@ -1322,26 +1369,10 @@ img {
     margin-right: -88px;
   }
   .reviews-slider__text {
-    max-width: 219px;
+    max-width: 100%;
   }
   .reviews-slider__profile {
     margin-bottom: 34px;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    max-width: 95%;
-  }
-  .logo {
-    width: 120px;
-  }
-  .hotel__slider {
-    height: 300px;
-    margin-bottom: 20px;
-  }
-  .newsletter-container {
-    max-width: 95%;
   }
 }
 
@@ -1355,12 +1386,28 @@ img {
   .hotel__slider {
     height: 179px;
   }
+  .hotel-booking {
+    min-height: 403px;
+  }
+  .booking {
+    margin-bottom: 20px;
+  }
+  .map {
+    height: 173px;
+    overflow: hidden;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
   .newsletter-container {
     max-width: 279px;
   }
   .newsletter-call {
     font-size: 20px;
     line-height: 25px;
+  }
+  .newsletter__call {
+    margin-bottom: 40px;
   }
   .newsletter-title {
     font-size: 30px;
