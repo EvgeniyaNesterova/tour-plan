@@ -936,7 +936,7 @@ img {
 }
 
 .reviews {
-  padding: 40px 0 100px 0;
+  padding-top: 40px;
 }
 
 .reviews__title {
@@ -1088,7 +1088,7 @@ img {
 }
 
 .activities {
-  padding-top: 60px;
+  padding-top: 15px;
   padding-bottom: 90px;
 }
 
@@ -1104,9 +1104,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1114,6 +1118,60 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 26px;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
+.card__image {
+  position: absolute;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.card__title {
+  max-width: 200px;
+  margin-top: auto;
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.card__button {
+  padding: 7px 22px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
