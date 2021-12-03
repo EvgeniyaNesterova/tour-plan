@@ -1582,6 +1582,7 @@ img {
   .card {
     width: 339px;
     height: 255px;
+    margin-bottom: 20px;
   }
   .footer {
     padding-top: 73px;
@@ -1928,7 +1929,7 @@ img {
   }
   .activities {
     padding-top: 40px;
-    padding-bottom: 59px;
+    padding-bottom: 37px;
   }
   .activities__title {
     font-size: 18px;
