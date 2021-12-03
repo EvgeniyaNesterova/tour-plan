@@ -408,6 +408,10 @@ img {
   padding-top: 31px;
 }
 
+.navbar-menu-list__item--mobile--visible {
+  display: none;
+}
+
 .navbar-menu__link {
   text-decoration: none;
   color: #FFFFFF;
@@ -1685,11 +1689,93 @@ img {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
   .container {
     max-width: 576px;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar-top__menu-button {
+    cursor: pointer;
+  }
+  .navbar--mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+  }
+  .navbar-menu--visible {
+    display: block;
+  }
+  .navbar-menu-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 31px;
+  }
+  .navbar-menu-list__item--mobile--visible {
+    width: 243px;
+    height: 40px;
+    display: block;
+    margin-bottom: 26px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .navbar-menu-list__item--mobile--visible--mb {
+    margin-bottom: 34px;
+  }
+  .navbar-menu-list__item--mobile--mb {
+    margin-bottom: 17px;
+  }
+  .navbar__search--mobile--visible {
+    margin: 0;
+    width: 243px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 100%;
+  }
+  .search__input-mobile {
+    width: 243px;
+    height: 40px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 23px;
+    padding-right: 70px;
+  }
+  .user__name--white {
+    color: #FFFFFF;
+    padding-top: 10px;
+    margin: 0;
   }
   .menu-button {
     width: 16px;
@@ -1852,9 +1938,6 @@ img {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 36px;
-  }
-  .activities__card--mb {
-    margin-bottom: 30px;
   }
   .card {
     width: 100%;
