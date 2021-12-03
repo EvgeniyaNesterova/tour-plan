@@ -85,7 +85,6 @@
       flex-wrap: wrap
       justify-content: space-between
     &__card
-      margin-bottom: 20px
   .card
     width: 339px
     height: 255px
@@ -321,7 +320,7 @@
       text-align: center
   .activities
     padding-top: 40px
-    padding-bottom: 40px
+    padding-bottom: 59px
     &__title
       font-size: 18px
       line-height: 23px
@@ -457,9 +456,12 @@
       font-size: 30px
       line-height: 38px
   .activities
-    &__card
-      &--mb
-        margin-bottom: 29px
+    &-wrapper
+      &__card
+        &-1, &-2
+          margin-bottom: 20px
+        &-3
+          margin-bottom: 29px
 @media (max-width: 320px)
   .container
     max-width: 279px
