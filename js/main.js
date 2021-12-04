@@ -28,11 +28,11 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     onlyInViewport: true,
   },
 });
-$(window).scroll(function() {
+// $(window).scroll(function() {
 
-  var st = $(this).scrollTop();
-  console.log(st); 
-});
+//   var st = $(this).scrollTop();
+//   console.log(st); 
+// });
 
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", function () {

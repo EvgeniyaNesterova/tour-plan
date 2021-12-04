@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=4fbeac7a-2181-4d6d-918b-16c591c03913&lang=en_US"></script>
+    <script>
+      ymaps.ready(init);
+      function init() {
+        var myMap = new ymaps.Map("map", {
+          center: [7.89073, 98.294727],
+          zoom: 17,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <header class="navbar navbar--mobile--fixed">
+      <div class="container">
+        <div class="navbar-top">
+          <a href="" class="logo">
+            <img
+              src="./img/horizontal-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo__image"
+            />
+          </a>
+
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search Location"
+            />
+            <button class="search__button">
+              <img src="./img/search.svg" alt="Icon:Search" />
+            </button>
+          </form>
+
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+            <img
+              src="./img/user-avatar.jpg"
+              alt="Avatar: Nathan"
+              class="user__avatar"
+            />
+            <span class="user__name">Nathan</span>
+          </a>
+          <!-- /.user -->
+          <button class="menu-button navbar-top__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
+        <!-- /.navbar-top -->
+      </div>
+      <!-- /.container -->
+      <nav class="navbar-menu">
+        <div class="container">
+          <ul class="navbar-menu-list">
+            <li
+              class="
+                navbar-menu-list__item navbar-menu-list__item--mobile--visible
+              "
+            >
+              <a
+                href="#"
+                class="user navbar__user navbar__user--mobile--visible"
+              >
+                <img
+                  src="./img/user-avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--white">Nathan</span>
+              </a>
+            </li>
+            <li
+              class="
+                navbar-menu-list__item
+                navbar-menu-list__item--mobile--visible
+                navbar-menu-list__item--mobile--visible--mb
+              "
+            >
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile--visible"
+              >
+                <input
+                  type="text"
+                  class="search__input-mobile"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="./img/search.svg" alt="Icon:Search" />
+                </button>
+              </form>
+            </li>
+            <li
+              class="navbar-menu-list__item navbar-menu-list__item--mobile--mb"
+            >
+              <a href="#" class="navbar-menu__link">All Deals</a>
+            </li>
+            <li
+              class="navbar-menu-list__item navbar-menu-list__item--mobile--mb"
+            >
+              <a href="#" class="navbar-menu__link">Hotels</a>
+            </li>
+            <li
+              class="navbar-menu-list__item navbar-menu-list__item--mobile--mb"
+            >
+              <a href="#" class="navbar-menu__link">Activities</a>
+            </li>
+            <li
+              class="navbar-menu-list__item navbar-menu-list__item--mobile--mb"
+            >
+              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+            </li>
+            <li
+              class="navbar-menu-list__item navbar-menu-list__item--mobile--mb"
+            >
+              <a href="#" class="navbar-menu__link">Restaurants</a>
+            </li>
+            <li
+              class="navbar-menu-list__item navbar-menu-list__item--mobile--mb"
+            >
+              <a href="#" class="navbar-menu__link">Events</a>
+            </li>
+            <li
+              class="navbar-menu-list__item navbar-menu-list__item--mobile--mb"
+            >
+              <a href="#" class="navbar-menu__link">Rodrigues</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.container -->
+      </nav>
+    </header>
+    <nav class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Home</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          </li>
+          <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
+        </ul>
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- /.breadcrumb -->
+
+    <section class="hotel">
+      <div class="container">
+        <div class="hotel-info">
+          <div class="hotel-info__text">
+            <div class="hotel-wrapper">
+              <div class="stars"></div>
+              <!-- /.stars -->
+              <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
+              <!-- /.hotel-name -->
+            </div>
+            <!-- /.hotel-wrapper -->
+            <p class="hotel-description hotel-info__description">
+              Наш менеджер свяжется с вами в течение 15 минут.
+            </p>
+            <!-- /.offer -->
+          </div>
+          <!-- /.hotel-info__text -->
+        </div>
+        <!-- /.hotel-info -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hotel -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <img
+            src="./img/vertical-logo.svg"
+            alt="Logo: Best Tour Plan"
+            class="logo footer__logo"
+          />
+          <div class="footer__list footer__categories">
+            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link"> All Deals</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link"> Hotels</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Activities</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link"> Spa Packages</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Hotel Day Packages</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Restaurants</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Fitness</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Rodrigues</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list footer__additional">
+            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">How does it work?</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Frequently Asked Questions</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Deals.mu loyalty program</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  Promote your Business on BTP</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social-network">
+            <h3 class="footer__title footer__title--inline">Social Network</h3>
+            <div class="footer__social-links">
+              <a href="#" class="footer__link"
+                ><img src="./img/facebook.svg" alt="Icon: Facebook"
+              /></a>
+              <a href="#" class="footer__link"
+                ><img src="./img/youtube.svg" alt="Icon: Youtube"
+              /></a>
+              <a href="#" class="footer__link"
+                ><img src="./img/instagram.svg" alt="Icon: Instagram"
+              /></a>
+            </div>
+          </div>
+          <!-- /.footer_social-network -->
+          <div class="footer__list footer__legal">
+            <h3 class="footer__title">LEGAL INFORMATION</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms & Conditions</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Disclaimer</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Cancellation policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__list -->
+          <div class="footer__contact-details">
+            <h3 class="footer__title footer__title--mb">Contact Details</h3>
+            <p class="footer__text">
+              Feel free to contact us by phone, email or by our contact form
+            </p>
+            <ul class="footer__ul">
+              <li class="footer__item footer__item--mb-2">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="./img/map-marker.svg"
+                    alt="Icon: Map marker"
+                  />
+                </div>
+                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                States
+              </li>
+              <li class="footer__item footer__item--mb-2">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="./img/phone-call.svg"
+                    alt="Icon: Phone-call"
+                  />
+                </div>
+                Tel (business hours) : 269 1500 <br />
+                Tel (hotline) Monday - Saturday:52-56-61-38 (08:00 am – 20:00
+                pm) <br />
+                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              </li>
+              <li class="footer__item footer__item--mb-2">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="./img/email.svg"
+                    alt="Icon: Email"
+                  />
+                </div>
+                cherly.lawson@example.com
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__contact-details -->
+          <div class="footer__contact-form">
+            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form">
+              <input
+                type="text"
+                class="input footer__input"
+                placeholder="Your Full Name*"
+                name="name"
+              />
+              <input
+                type="text"
+                class="input footer__input"
+                placeholder="Phone Number*"
+                name="phone"
+              />
+              <textarea
+                class="footer__message"
+                placeholder="Message"
+                name="message"
+              ></textarea>
+              <div class="footer__info-wrapper">
+                <button class="button footer__button">Send</button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
+            </form>
+          </div>
+          <!-- /.footer__contact-form -->
+        </div>
+        <!-- /.footer-wrapper -->
+        <div class="footer__information">
+          <div class="footer__information-wrapper">
+            <span class="footer__information-text">Disclaimer</span>
+            <span class="footer__information-text">Conditions of use</span>
+            <span class="footer__information-text">Cancellation policy</span>
+          </div>
+          <img
+            src="./img/footer-partners.svg"
+            alt="Icon: Partners"
+            class="footer__information-partners"
+          />
+        </div>
+        <!-- /.footer__information -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
