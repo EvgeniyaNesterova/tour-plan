@@ -55,6 +55,19 @@
     padding-right: 23px
     &__call-center
       margin-bottom: 14px
+  .modal
+    &__dialog
+      &--visible
+        max-width: 380px
+        padding: 20px 50px
+    &__info
+      &-wrapper
+        height: 40px
+    &__button
+      min-width: 125px
+      border-radius: 4px
+    &__message
+      margin-bottom: 16px
   .map
     width: 340px
   .newsletter
@@ -272,6 +285,10 @@
       justify-content: space-between
   .booking
     width: 100%
+  .modal
+    &__dialog
+      &--visible
+        width: 500px
   .map
     width: 100%
     &__size
@@ -424,6 +441,22 @@
         max-width: 100%
       &__profile
         margin-bottom: 34px
+  .modal
+    &__button
+      width: 100%
+    &__dialog
+      &--visible
+        overflow-x: auto
+        overflow-y: auto
+        height: 550px
+        width: 280px
+        padding-left: 30px
+        padding-right: 30px
+    &__info
+      &-wrapper
+        height: 100px
+        flex-direction: column
+        justify-content: space-between
   .card
     width: 280px
     &:nth-child(2)
