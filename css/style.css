@@ -974,6 +974,7 @@ img {
   line-height: 15px;
   font-weight: 700;
   font-style: normal;
+  cursor: pointer;
 }
 
 .reviews {
