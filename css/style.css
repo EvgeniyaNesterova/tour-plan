@@ -1828,9 +1828,8 @@ img {
   }
   .navbar-menu--visible {
     display: block;
-    height: 498px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
   }
   .navbar-menu-list {
     -webkit-box-orient: vertical;
