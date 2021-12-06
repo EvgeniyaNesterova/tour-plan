@@ -905,7 +905,7 @@ img {
   row-gap: 30px;
 }
 
-.packages-offer--large {
+.packages-offer-large {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 366px 364px;
@@ -913,7 +913,7 @@ img {
   overflow: hidden;
 }
 
-.packages-offer--large--image-container {
+.packages-offer-large__image-container {
   position: relative;
   max-width: 366px;
   height: 500px;
@@ -922,7 +922,7 @@ img {
   overflow: hidden;
 }
 
-.packages-offer--large--information {
+.packages-offer-large__information {
   max-width: 364px;
   height: 500px;
   padding: 46px 21px 30px 44px;
@@ -933,7 +933,7 @@ img {
   overflow: hidden;
 }
 
-.packages-offer--large--room {
+.packages-offer-large__room {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -946,7 +946,7 @@ img {
   margin-bottom: 37px;
 }
 
-.packages-offer--large--room-text {
+.packages-offer-large__room-text {
   font-size: 12px;
   line-height: 15px;
 }
@@ -1861,14 +1861,14 @@ img {
   .packages__information {
     max-width: 100%;
   }
-  .packages-offer--large {
+  .packages-offer-large {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .packages-offer--large--image-container {
+  .packages-offer-large--image-container {
     max-width: 480px;
   }
-  .packages-offer--large--information {
+  .packages-offer-large--information {
     max-width: 480px;
   }
   .footer__legal {
@@ -2324,17 +2324,17 @@ img {
         grid-column-start: 1;
     grid-column-end: 2;
   }
-  .packages-offer--large {
+  .packages-offer-large {
     display: block;
   }
-  .packages-offer--large--image-container {
+  .packages-offer-large--image-container {
     max-width: 100%;
     max-height: 250px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
-  .packages-offer--large--information {
+  .packages-offer-large--information {
     max-width: 100%;
     max-height: 250px;
     padding: 20px 21px 25px 32px;
@@ -2342,7 +2342,7 @@ img {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
-  .packages-offer--large--room {
+  .packages-offer-large--room {
     margin-bottom: 20px;
   }
   .footer__contact-form {
