@@ -782,35 +782,38 @@
           <img src="./img/close.svg" alt="Icon: Close"
         /></a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Phone Number*"
-            name="phone"
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Email*"
-            name="phone"
-          />
-          <textarea
-            class="message modal__message"
-            placeholder="Message"
-            name="message"
-          ></textarea>
-          <div class="modal__info-wrapper">
-            <button class="button modal__button">Send</button>
-            <span class="modal__info">* Required Fields</span>
-          </div>
-        </form>
+        <div class="modal__dialog-wrapper">
+          <form action="send.php" method="POST" class="modal__form">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+            />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Phone Number*"
+              name="phone"
+            />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Email*"
+              name="phone"
+            />
+            <textarea
+              class="message modal__message"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <div class="modal__info-wrapper">
+              <button class="button modal__button">Send</button>
+              <span class="modal__info">* Required Fields</span>
+            </div>
+          </form>
+        </div>
+        <!-- /.modal__dialog-wrapper -->
       </div>
       <!-- /.modal__dialog -->
     </div>

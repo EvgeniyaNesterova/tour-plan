@@ -1504,9 +1504,19 @@ img {
   transition: opacity 0.2s;
 }
 
+.modal__dialog-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .modal__close {
