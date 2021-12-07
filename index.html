@@ -1049,32 +1049,33 @@
     </footer>
 
     <div class="modal">
-      <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="./img/close.svg" alt="Icon: Close"
-        /></a>
-        <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <div class="modal__dialog-wrapper">
+      <div class="modal__overlay">
+        <div class="modal__dialog">
+          <a href="#" class="modal__close">
+            <img src="./img/close.svg" alt="Icon: Close"
+          /></a>
+          <h3 class="modal__title modal__title--mb-3">Booking</h3>
           <form action="send.php" method="POST" class="modal__form">
             <input
               type="text"
               class="input modal__input"
               placeholder="Your Full Name*"
               name="name"
+              required
             />
             <input
               type="text"
               class="input modal__input"
-              placeholder="Phone Number*"
+              placeholder="Your Phone Number*"
               name="phone"
+              required
             />
             <input
               type="text"
               class="input modal__input"
-              placeholder="Email*"
-              name="phone"
+              placeholder="Your Email*"
+              name="email"
+              required
             />
             <textarea
               class="message modal__message"
@@ -1087,13 +1088,14 @@
             </div>
           </form>
         </div>
-        <!-- /.modal__dialog-wrapper -->
+        <!-- /.modal__dialog -->
       </div>
-      <!-- /.modal__dialog -->
+      <!-- /.modal__overlay -->
     </div>
     <!-- /.modal -->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

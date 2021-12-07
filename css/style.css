@@ -1748,36 +1748,38 @@ img {
 }
 
 .modal__dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  max-width: 478px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 478px;
   padding: 33px 88px;
+  margin-top: 191px;
+  margin-left: 50%;
+  margin-right: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-color: #0A223D;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   color: #FFFFFF;
   border-radius: 8px;
-  z-index: 101;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.modal__dialog-wrapper {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow-x: auto;
-  overflow-y: auto;
-}
-
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
-  overflow-x: auto;
-  overflow-y: auto;
 }
 
 .modal__close {
@@ -1790,13 +1792,13 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 13px;
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1816,6 +1818,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 12px;
+  overflow: hidden;
 }
 
 .modal__title {
@@ -1865,10 +1869,10 @@ img {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .packages-offer-large--image-container {
+  .packages-offer-large__image-container {
     max-width: 480px;
   }
-  .packages-offer-large--information {
+  .packages-offer-large__information {
     max-width: 480px;
   }
   .footer__legal {
@@ -1939,20 +1943,6 @@ img {
   }
   .booking__call-center {
     margin-bottom: 14px;
-  }
-  .modal__dialog--visible {
-    max-width: 380px;
-    padding: 20px 50px;
-  }
-  .modal__info-wrapper {
-    height: 40px;
-  }
-  .modal__button {
-    min-width: 125px;
-    border-radius: 4px;
-  }
-  .modal__message {
-    margin-bottom: 16px;
   }
   .map {
     width: 340px;
@@ -2278,8 +2268,26 @@ img {
   .booking {
     width: 100%;
   }
-  .modal__dialog--visible {
-    width: 500px;
+  .modal__overlay {
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  .modal__dialog {
+    width: 378px;
+    padding: 20px 60px;
+  }
+  .modal__info-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .modal__button {
+    width: 100%;
+    margin-bottom: 20px;
   }
   .map {
     width: 100%;
@@ -2327,14 +2335,14 @@ img {
   .packages-offer-large {
     display: block;
   }
-  .packages-offer-large--image-container {
+  .packages-offer-large__image-container {
     max-width: 100%;
     max-height: 250px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
-  .packages-offer-large--information {
+  .packages-offer-large__information {
     max-width: 100%;
     max-height: 250px;
     padding: 20px 21px 25px 32px;
@@ -2342,7 +2350,7 @@ img {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
-  .packages-offer-large--room {
+  .packages-offer-large__room {
     margin-bottom: 20px;
   }
   .footer__contact-form {
@@ -2531,6 +2539,10 @@ img {
   .footer__message {
     margin-bottom: 0;
   }
+  .modal__dialog--visible {
+    min-width: 265px;
+    padding: 15px 30px;
+  }
 }
 
 @media (max-width: 485px) {
@@ -2569,18 +2581,7 @@ img {
   .reviews-slider__profile {
     margin-bottom: 34px;
   }
-  .modal__button {
-    width: 100%;
-  }
-  .modal__dialog--visible {
-    overflow-x: auto;
-    overflow-y: auto;
-    height: 550px;
-    width: 280px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .modal__info-wrapper {
+  .reviews__info-wrapper {
     height: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
