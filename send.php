@@ -11,13 +11,22 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "New message Best Tour Plan";
+$title = "Booking request Best Tour Plan";
+$title_newsletter = "Subscription to Newsletters from Best Tour Plan";
 $body = "
-<h2>New message</h2>
+<h4>Sent from: evgeniya.nesterova0804@gmail.com </h3>
+<h4>Web-site: Best Tour Plan</h3>
+<h2>Booking request</h2>
 <b>Имя:</b> $name<br>
 <b>Почта:</b> $email<br><br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
+";
+$body_newsletter = "
+<h4>Sent from: evgeniya.nesterova0804@gmail.com </h3>
+<h4>Web-site: Best Tour Plan</h3>
+<h2>I would like to subscribe to Newsletters from Best Tour Plan</h2>
+<b>Почта:</b> $email<br><br>
 ";
 
 // Настройки PHPMailer
@@ -43,7 +52,16 @@ try {
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
-    $mail->Body = $body;    
+    $mail->Body = $body;
+    if (isset($name)) {
+        $mail->Body = $body;
+        $mail->Subject = $title;}
+    else {
+        $mail->Body = $body_newsletter;
+        $mail->Subject = $title_newsletter;}
+
+
+
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
