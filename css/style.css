@@ -1867,9 +1867,7 @@ input {
 }
 
 .modal__close {
-  position: absolute;
-  top: 17px;
-  right: 18px;
+  padding-left: 117%;
   text-decoration: none;
   cursor: pointer;
 }
