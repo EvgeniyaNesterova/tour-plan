@@ -76,6 +76,7 @@ $(document).keydown(function(e) {
     },
     phone: {
       required: "Please specify your phone number",
+      minlength: "Number should be at least 11 digits long"
     },
     search: {
       required: "Please indicate",
