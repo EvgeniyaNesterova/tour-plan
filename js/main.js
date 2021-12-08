@@ -95,4 +95,5 @@ $(document).keydown(function(e) {
     },
   },
   });
+  AOS.init();
 });
