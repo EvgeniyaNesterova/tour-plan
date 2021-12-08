@@ -28,6 +28,14 @@ $body_newsletter = "
 <h2>I would like to subscribe to Newsletters from Best Tour Plan</h2>
 <b>Почта:</b> $email<br><br>
 ";
+$body_footer = "
+<h4>Sent from: evgeniya.nesterova0804@gmail.com </h3>
+<h4>Web-site: Best Tour Plan</h3>
+<h2>New message</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$message
+";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -53,12 +61,22 @@ try {
     $mail->isHTML(true);
     $mail->Subject = $title;
     $mail->Body = $body;
-    if (isset($name)) {
+    // if (isset($name)) {
+    //     $mail->Body = $body;
+    //     $mail->Subject = $title;}
+    // else {
+    //     $mail->Body = $body_newsletter;
+    //     $mail->Subject = $title_newsletter;}
+    
+    if(isset($name, $email, $phone, $message)) {
         $mail->Body = $body;
-        $mail->Subject = $title;}
-    else {
+    }
+    if(isset($name, $phone, $message)) {
+        $mail->Body = $body_footer;
+    }
+    if(isset($email)) {
         $mail->Body = $body_newsletter;
-        $mail->Subject = $title_newsletter;}
+    }
 
 
 

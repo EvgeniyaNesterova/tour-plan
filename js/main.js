@@ -95,8 +95,4 @@ $(document).keydown(function(e) {
     },
   },
   });
-
-  $('.form').click(function () { 
-    $('form').trigger('reset'); 
-  });
 });
