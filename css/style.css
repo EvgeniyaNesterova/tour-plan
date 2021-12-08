@@ -1842,6 +1842,7 @@ input {
 }
 
 .modal__dialog {
+  position: relative;
   margin: auto;
   max-width: 478px;
   padding: 33px 88px;
@@ -1871,9 +1872,12 @@ input {
 }
 
 .modal__close {
-  padding-left: 117%;
+  position: absolute;
+  top: 17px;
+  right: 18px;
   text-decoration: none;
   cursor: pointer;
+  z-index: 120;
 }
 
 .modal__input {
