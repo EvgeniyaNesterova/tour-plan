@@ -390,6 +390,7 @@ img {
   color: #FFFFFF;
   background-color: #EC1F46;
   cursor: pointer;
+  outline: none;
 }
 
 .button:hover {
@@ -1145,6 +1146,7 @@ input {
   font-size: 14px;
   line-height: 19px;
   font-weight: 600;
+  outline: none;
 }
 
 .packages__button:hover {
@@ -1294,6 +1296,7 @@ input {
   font-weight: 700;
   font-style: normal;
   cursor: pointer;
+  outline: none;
 }
 
 .subscribe__button:active {
@@ -1558,6 +1561,7 @@ input {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  outline: none;
 }
 
 .card__button:hover {
