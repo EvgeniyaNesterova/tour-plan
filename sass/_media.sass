@@ -51,6 +51,8 @@
     &-menu__link
       font-size: 12px
       line-height: 15px
+      &:hover
+        text-decoration: none
     &-menu-list
       margin: 0
       padding: 20px 0 25px 0
@@ -76,6 +78,9 @@
     padding-right: 23px
     &__call-center
       margin-bottom: 14px
+    &__button
+      &:hover
+        transform: none
   .map
     width: 340px
   .newsletter
@@ -109,11 +114,17 @@
     width: 339px
     height: 255px
     margin-bottom: 20px
+    &__button
+      &:hover
+        transform: none
   .packages
     &__title
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
+    &__button
+      &:hover
+        transform: none
   .footer
     padding-top: 73px
     padding-bottom: 33px
@@ -177,6 +188,10 @@
         margin-bottom: 58px
     &__information
       justify-content: space-between
+  .modal
+    &__button
+      &:hover
+        transform: none
 @media (max-width: 768px)
   body
     padding-top: 80px

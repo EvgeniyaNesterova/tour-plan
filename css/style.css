@@ -1985,6 +1985,9 @@ input {
     font-size: 12px;
     line-height: 15px;
   }
+  .navbar-menu__link:hover {
+    text-decoration: none;
+  }
   .navbar-menu-list {
     margin: 0;
     padding: 20px 0 25px 0;
@@ -2025,6 +2028,10 @@ input {
   }
   .booking__call-center {
     margin-bottom: 14px;
+  }
+  .booking__button:hover {
+    -webkit-transform: none;
+            transform: none;
   }
   .map {
     width: 340px;
@@ -2074,10 +2081,18 @@ input {
     height: 255px;
     margin-bottom: 20px;
   }
+  .card__button:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
   .packages__title {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 50px;
+  }
+  .packages__button:hover {
+    -webkit-transform: none;
+            transform: none;
   }
   .footer {
     padding-top: 73px;
@@ -2177,6 +2192,10 @@ input {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .modal__button:hover {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
