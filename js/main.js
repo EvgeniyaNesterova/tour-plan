@@ -29,11 +29,6 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     onlyInViewport: true,
   },
 });
-// $(window).scroll(function() {
-
-//   var st = $(this).scrollTop();
-//   console.log(st); 
-// });
 
 var menuButton = $(".menu-button");
 menuButton.on("click", function () {
@@ -67,4 +62,41 @@ $(document).keydown(function(e) {
         modalDialog.removeClass('modal__dialog--visible');
     }
 });
+
+  $('.form').each(function() {
+    $(this).validate({
+    errorClass: "invalid",
+    messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "Name should be longer than 2 characters"
+    },
+    email: {
+      required: "Please specify your email address",
+    },
+    phone: {
+      required: "Please specify your phone number",
+    },
+    search: {
+      required: "Please indicate",
+    },
+    
+  },
+  });
+  });
+  $("#phone").mask("+7(999) 999-9999");
+  $("#phone_1").mask("+7(999) 999-9999");
+
+  $('.form-mobile').validate({
+    errorClass: "invalid",
+    messages: {
+    search: {
+      required: "Please indicate",
+    },
+  },
+  });
+
+  $('.form').click(function () { 
+    $('form').trigger('reset'); 
+  });
 });

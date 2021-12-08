@@ -389,6 +389,19 @@ img {
   border: none;
   color: #FFFFFF;
   background-color: #EC1F46;
+  cursor: pointer;
+}
+
+.invalid {
+  color: #EC1F46;
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+input {
+  outline: none;
 }
 
 .navbar {
@@ -467,7 +480,7 @@ img {
 
 .search__input {
   width: 350px;
-  height: 100%;
+  height: 40px;
   background-color: #F5FAFE;
   border: none;
   font-size: 12px;
@@ -475,6 +488,21 @@ img {
   color: #333333;
   padding-left: 23px;
   padding-right: 70px;
+}
+
+.search__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  min-height: 40px;
+  margin-bottom: 40px;
+  border: none;
 }
 
 .search__button {
@@ -485,6 +513,7 @@ img {
   right: 0;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -1658,6 +1687,10 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
@@ -1728,6 +1761,10 @@ img {
   color: #FFFFFF;
 }
 
+.footer__button {
+  cursor: pointer;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1748,38 +1785,36 @@ img {
 }
 
 .modal__dialog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 478px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
   padding: 33px 88px;
-  margin-top: 191px;
-  margin-left: 50%;
-  margin-right: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   background-color: #0A223D;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #FFFFFF;
   border-radius: 8px;
+  z-index: 101;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
+.modal__dialog-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .modal__close {
@@ -1792,13 +1827,13 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-top: 15px;
+  margin-bottom: 13px;
 }
 
 .modal__info {
@@ -1818,8 +1853,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 12px;
-  overflow: hidden;
 }
 
 .modal__title {
@@ -1878,7 +1911,7 @@ img {
   .footer__legal {
     padding: 0;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2072,7 +2105,7 @@ img {
     grid-column: span 6;
     max-width: 540px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
@@ -2177,12 +2210,18 @@ img {
   .search__input-mobile {
     width: 243px;
     height: 40px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
     padding-top: 12px;
     padding-bottom: 13px;
     padding-left: 23px;
     padding-right: 70px;
+  }
+  .search__input-mobile-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: none;
   }
   .user__name--white {
     color: #FFFFFF;
@@ -2356,7 +2395,7 @@ img {
   .footer__contact-form {
     max-width: 100%;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
