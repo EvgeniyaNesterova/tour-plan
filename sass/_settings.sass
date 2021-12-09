@@ -5,6 +5,7 @@ body
   font-family: 'Mulish', sans-serif
   background-color: $secondary
   color: $text-color
+  overflow-x: hidden
 .container
   max-width: 1110px
   margin: auto
@@ -46,7 +47,10 @@ img
     text-decoration: underline
 
 .invalid
-  position: relative
+  position: absolute
+  bottom: 0
+  left: 0
+  padding-left: 23px
   color: $primary
   font-size: 12px
   line-height: 15px

@@ -350,6 +350,7 @@ body {
   font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
   color: #333333;
+  overflow-x: hidden;
 }
 
 .container {
@@ -403,7 +404,10 @@ img {
 }
 
 .invalid {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 23px;
   color: #EC1F46;
   font-size: 12px;
   line-height: 15px;
@@ -1732,8 +1736,6 @@ input {
 
 .footer__input {
   width: 100%;
-  overflow: visible;
-  position: relative;
 }
 
 .footer__input-group {
@@ -1741,6 +1743,8 @@ input {
       flex-basis: 47%;
   height: 50px;
   margin-bottom: 15px;
+  overflow: visible;
+  position: relative;
 }
 
 .footer__message {
@@ -2410,7 +2414,10 @@ input {
   }
   .modal__dialog {
     width: 378px;
-    padding: 20px 60px;
+    padding: 30px 60px;
+  }
+  .modal__input-group {
+    width: 100%;
   }
   .modal__info-wrapper {
     -webkit-box-orient: vertical;
@@ -2675,9 +2682,11 @@ input {
   .footer__message {
     margin-bottom: 0;
   }
-  .modal__dialog--visible {
+  .modal__dialog {
     min-width: 265px;
-    padding: 15px 30px;
+  }
+  .modal__dialog__input-group {
+    width: 100%;
   }
 }
 
@@ -2742,6 +2751,13 @@ input {
   }
   .packages__button {
     padding: 10px 15px;
+  }
+  .modal__dialog {
+    width: 177px;
+    padding: 30px 20px;
+  }
+  .modal__input-group {
+    width: 100%;
   }
 }
 
