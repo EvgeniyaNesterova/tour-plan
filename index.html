@@ -116,7 +116,6 @@
                     <img src="./img/search.svg" alt="Icon:Search" />
                   </button>
                 </div>
-                <!-- /.search__input-mobile-group -->
               </form>
             </li>
             <li
@@ -1144,30 +1143,36 @@
           /></a>
           <h3 class="modal__title modal__title--mb-3">Booking</h3>
           <form action="send.php" method="POST" class="form modal__form">
-            <input
-              type="text"
-              class="input modal__input"
-              placeholder="Your Full Name*"
-              name="name"
-              required
-              minlength="2"
-            />
-            <input
-              type="tel"
-              class="input modal__input"
-              placeholder="Your Phone Number*"
-              name="phone"
-              id="phone_1"
-              required
-              minlength="11"
-            />
-            <input
-              type="email"
-              class="input modal__input"
-              placeholder="Your Email*"
-              name="email"
-              required
-            />
+            <div class="modal__input-group">
+              <input
+                type="text"
+                class="input modal__input"
+                placeholder="Your Full Name*"
+                name="name"
+                required
+                minlength="2"
+              />
+            </div>
+            <div class="modal__input-group">
+              <input
+                type="tel"
+                class="input modal__input"
+                placeholder="Your Phone Number*"
+                name="phone"
+                id="phone_1"
+                required
+                minlength="11"
+              />
+            </div>
+            <div class="modal__input-group">
+              <input
+                type="email"
+                class="input modal__input"
+                placeholder="Your Email*"
+                name="email"
+                required
+              />
+            </div>
             <textarea
               class="message modal__message"
               placeholder="Message"

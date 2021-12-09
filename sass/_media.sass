@@ -254,16 +254,18 @@
   .search
     &__input
       &-mobile
-        width: 243px
-        height: 40px
+        width: 100%
+        height: 100%
         padding-top: 12px
         padding-bottom: 13px
         padding-left: 23px
         padding-right: 70px
+        overflow: visible
         &-group
-          display: flex
-          flex-wrap: wrap
-          border: none
+          overflow: visible
+          position: relative
+          width: 243px
+          height: 40px
   .user
     &__name
       &--white
