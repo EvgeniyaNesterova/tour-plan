@@ -346,6 +346,10 @@ template {
           box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
@@ -2756,8 +2760,8 @@ input {
     padding: 10px 15px;
   }
   .modal__dialog {
-    width: 177px;
-    padding: 30px 20px;
+    width: 90%;
+    padding: 30px 40px;
   }
   .modal__input-group {
     width: 100%;
