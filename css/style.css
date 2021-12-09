@@ -2227,6 +2227,9 @@ input {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .footer-contact:hover {
+    text-decoration: none;
+  }
   .modal__button:hover {
     -webkit-transform: none;
             transform: none;

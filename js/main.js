@@ -69,14 +69,14 @@ $(document).keydown(function(e) {
     messages: {
     name: {
       required: "Please specify your name",
-      minlength: "Name should be longer than 2 characters"
+      minlength: "Should be longer than 2 characters"
     },
     email: {
       required: "Please specify your email address",
     },
     phone: {
       required: "Please specify your phone number",
-      minlength: "Number should be at least 11 digits long"
+      minlength: "Should be at least 11 digits long"
     },
     search: {
       required: "Please indicate",
