@@ -1812,6 +1812,21 @@ input {
   cursor: pointer;
 }
 
+.footer-contact {
+  text-decoration: none;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-contact:hover {
+  text-decoration: underline;
+}
+
+.footer-contact:hover:active {
+  color: #EC1F46;
+}
+
 .modal__overlay {
   position: fixed;
   display: -webkit-box;
