@@ -2696,6 +2696,7 @@ input {
   }
   .modal__dialog {
     min-width: 265px;
+    margin-top: 15px;
   }
   .modal__dialog__input-group {
     width: 100%;
