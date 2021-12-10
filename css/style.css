@@ -351,10 +351,10 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
   color: #333333;
-  overflow-x: hidden;
 }
 
 .container {
@@ -2504,7 +2504,10 @@ input {
     margin-bottom: 20px;
   }
   .footer__contact-form {
-    max-width: 100%;
+    width: 100%;
+  }
+  .footer__input {
+    width: 100%;
   }
   .footer__input-group {
     -ms-flex-preferred-size: 100%;
