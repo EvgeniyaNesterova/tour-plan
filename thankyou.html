@@ -30,7 +30,7 @@
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="" class="logo">
+          <a href="./index.html" class="logo">
             <img
               src="./img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -178,7 +178,7 @@
                 <h1 class="feedback__title">Thank you for your message</h1>
                 <div class="feedback__button-wrapper">
                   <form action="./index.html">
-                    <button class="feedback__button">Hope page</button>
+                    <button class="feedback__button">Home page</button>
                   </form>
                 </div>
               </div>
@@ -195,11 +195,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="./img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a href="./index.html" class="footer__logo">
+            <img
+              src="./img/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo"
+            />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -312,10 +314,25 @@
                     alt="Icon: Phone-call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday:52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__phone">
+                  Tel (business hours) :<a
+                    class="footer-contact"
+                    href="tel:269-1500"
+                  >
+                    269-1500</a
+                  >
+                  <br />
+                  Tel (hotline) Monday - Saturday:
+                  <a class="footer-contact" href="tel:52-56-61-38"
+                    >&nbsp 52-56-61-38 </a
+                  >(08:00 am – 20:00 pm)
+                  <br />
+                  Tel (hotline) Sunday:
+                  <a class="footer-contact" href="tel:52-56-61-38"
+                    >&nbsp 52-56-61-38</a
+                  >
+                  (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -325,7 +342,11 @@
                     alt="Icon: Email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a
+                  class="footer-contact"
+                  href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -352,6 +373,7 @@
                   name="phone"
                   id="phone"
                   required
+                  minlength="11"
                 />
               </div>
               <!-- /.footer__input-group -->
@@ -385,6 +407,7 @@
       </div>
       <!-- /.container -->
     </footer>
+
     <div class="modal">
       <div class="modal__overlay">
         <div class="modal__dialog">
@@ -393,29 +416,36 @@
           /></a>
           <h3 class="modal__title modal__title--mb-3">Booking</h3>
           <form action="send.php" method="POST" class="form modal__form">
-            <input
-              type="text"
-              class="input modal__input"
-              placeholder="Your Full Name*"
-              name="name"
-              required
-              minlength="2"
-            />
-            <input
-              type="tel"
-              class="input modal__input"
-              placeholder="Your Phone Number*"
-              name="phone"
-              id="phone_1"
-              required
-            />
-            <input
-              type="email"
-              class="input modal__input"
-              placeholder="Your Email*"
-              name="email"
-              required
-            />
+            <div class="modal__input-group">
+              <input
+                type="text"
+                class="input modal__input"
+                placeholder="Your Full Name*"
+                name="name"
+                required
+                minlength="2"
+              />
+            </div>
+            <div class="modal__input-group">
+              <input
+                type="tel"
+                class="input modal__input"
+                placeholder="Your Phone Number*"
+                name="phone"
+                id="phone_1"
+                required
+                minlength="11"
+              />
+            </div>
+            <div class="modal__input-group">
+              <input
+                type="email"
+                class="input modal__input"
+                placeholder="Your Email*"
+                name="email"
+                required
+              />
+            </div>
             <textarea
               class="message modal__message"
               placeholder="Message"
@@ -436,6 +466,7 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.mask.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
