@@ -399,12 +399,11 @@ img {
 }
 
 .button:hover {
-  -webkit-transform: scaleY(1.2);
-  transform: scaleY(1.2);
+  text-decoration: underline;
 }
 
 .button:active {
-  text-decoration: underline;
+  color: #0A223D;
 }
 
 .invalid {
@@ -535,8 +534,12 @@ input {
   border-bottom-right-radius: 6px;
 }
 
-.search__button:active {
+.search__button:hover {
   text-decoration: underline;
+}
+
+.search__button:active {
+  color: #0A223D;
 }
 
 .user {
@@ -564,6 +567,14 @@ input {
   margin-left: 18px;
 }
 
+.user__name:hover {
+  text-decoration: underline;
+}
+
+.user__name:active {
+  color: #EC1F46;
+}
+
 .breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,6 +595,14 @@ input {
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
   margin-right: 4px;
+}
+
+.breadcrumb-list__item:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-list__item:active {
+  color: #EC1F46;
 }
 
 .breadcrumb-list__link {
@@ -896,6 +915,14 @@ input {
   text-decoration: none;
 }
 
+.booking__number:hover {
+  text-decoration: underline;
+}
+
+.booking__number:active {
+  color: #EC1F46;
+}
+
 .booking__num {
   margin-left: 8px;
   font-size: 18px;
@@ -914,6 +941,14 @@ input {
   color: inherit;
   border: none;
   cursor: pointer;
+}
+
+.booking__button:hover {
+  text-decoration: underline;
+}
+
+.booking__button:active {
+  color: #0A223D;
 }
 
 .map {
@@ -1151,12 +1186,11 @@ input {
 }
 
 .packages__button:hover {
-  -webkit-transform: scaleY(1.2);
-  transform: scaleY(1.2);
+  text-decoration: underline;
 }
 
 .packages__button:active {
-  text-decoration: underline;
+  color: #0A223D;
 }
 
 .packages__information {
@@ -1303,8 +1337,12 @@ input {
   border-top-right-radius: 4px;
 }
 
-.subscribe__button:active {
+.subscribe__button:hover {
   text-decoration: underline;
+}
+
+.subscribe__button:active {
+  color: #0A223D;
 }
 
 .reviews {
@@ -1569,12 +1607,11 @@ input {
 }
 
 .card__button:hover {
-  -webkit-transform: scaleY(1.2);
-  transform: scaleY(1.2);
+  text-decoration: underline;
 }
 
 .card__button:active {
-  text-decoration: underline;
+  color: #0A223D;
 }
 
 .footer {
@@ -1738,6 +1775,14 @@ input {
   color: inherit;
 }
 
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__link:active {
+  color: #EC1F46;
+}
+
 .footer__input {
   width: 100%;
 }
@@ -1816,8 +1861,29 @@ input {
   color: #FFFFFF;
 }
 
+.footer__information-link {
+  text-decoration: none;
+  color: #bdbdbd;
+}
+
+.footer__information-link:hover {
+  text-decoration: underline;
+}
+
+.footer__information-link:active {
+  color: #EC1F46;
+}
+
 .footer__button {
   cursor: pointer;
+}
+
+.footer__button:hover {
+  text-decoration: underline;
+}
+
+.footer__button:active {
+  color: #0A223D;
 }
 
 .footer-contact {
@@ -1831,8 +1897,13 @@ input {
   text-decoration: underline;
 }
 
-.footer-contact:hover:active {
+.footer-contact:active {
   color: #EC1F46;
+}
+
+.footer__image:hover {
+  -webkit-transform: scaleY(1.2);
+  transform: scaleY(1.2);
 }
 
 .modal__overlay {
@@ -2032,6 +2103,15 @@ input {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .search__button:hover {
+    text-decoration: none;
+  }
+  .user__name:hover {
+    text-decoration: none;
+  }
+  .breadcrumb-list__item:hover {
+    text-decoration: none;
+  }
   .logo {
     width: 96px;
   }
@@ -2060,6 +2140,12 @@ input {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .hotel__number:hover {
+    text-decoration: none;
+  }
+  .hotel__button:hover {
+    text-decoration: none;
+  }
   .booking {
     width: 340px;
     padding-right: 23px;
@@ -2068,8 +2154,10 @@ input {
     margin-bottom: 14px;
   }
   .booking__button:hover {
-    -webkit-transform: none;
-            transform: none;
+    text-decoration: none;
+  }
+  .booking__number:hover {
+    text-decoration: none;
   }
   .map {
     width: 340px;
@@ -2077,8 +2165,14 @@ input {
   .newsletter {
     padding: 92px 0 93px 0;
   }
+  .newsletter__button:hover {
+    text-decoration: none;
+  }
   .newsletter-container {
     max-width: 700px;
+  }
+  .subscribe__button:hover {
+    text-decoration: none;
   }
   .reviews {
     padding-top: 40px;
@@ -2120,8 +2214,7 @@ input {
     margin-bottom: 20px;
   }
   .card__button:hover {
-    -webkit-transform: none;
-            transform: none;
+    text-decoration: none;
   }
   .packages__title {
     font-size: 30px;
@@ -2129,12 +2222,14 @@ input {
     margin-bottom: 50px;
   }
   .packages__button:hover {
-    -webkit-transform: none;
-            transform: none;
+    text-decoration: none;
   }
   .footer {
     padding-top: 73px;
     padding-bottom: 33px;
+  }
+  .footer__link:hover {
+    text-decoration: none;
   }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[7];
@@ -2233,12 +2328,24 @@ input {
         -ms-flex-align: center;
             align-items: center;
   }
+  .footer__information-link:hover {
+    text-decoration: none;
+  }
   .footer-contact:hover {
     text-decoration: none;
   }
-  .modal__button:hover {
+  .footer__button:hover {
+    text-decoration: none;
+  }
+  .footer__image:hover {
     -webkit-transform: none;
             transform: none;
+  }
+  .modal__button:hover {
+    text-decoration: none;
+  }
+  .feedback__button:hover {
+    text-decoration: none;
   }
 }
 
@@ -2872,6 +2979,6 @@ input {
 }
 
 .feedback__button:active {
-  color: #EC1F46;
+  color: #0A223D;
 }
 /*# sourceMappingURL=style.css.map */

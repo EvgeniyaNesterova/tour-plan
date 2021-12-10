@@ -70,8 +70,10 @@
     cursor: pointer
     border-top-right-radius: 6px
     border-bottom-right-radius: 6px
-    &:active
+    &:hover
       text-decoration: underline
+    &:active
+      color: $dark
 .user
   display: flex
   align-items: center
@@ -86,3 +88,7 @@
     line-height: 18px
     color: $text-color
     margin-left: 18px
+    &:hover
+      text-decoration: underline
+    &:active
+      color: $primary
