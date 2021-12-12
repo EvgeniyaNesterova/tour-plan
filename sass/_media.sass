@@ -41,6 +41,7 @@
 @media (max-width: 992px)
   .container
     max-width: 700px
+    margin: auto
   .navbar
     &-top
       padding-top: 30px
@@ -242,8 +243,6 @@
       &:hover
         text-decoration: none
 @media (max-width: 767px)
-  body
-    padding-top: 80px
   .container
     max-width: 576px
   .navbar
@@ -253,7 +252,7 @@
           cursor: pointer
     &--mobile
       &--fixed
-        position: fixed
+        position: sticky
         left: 0
         top: 0
         right: 0
@@ -447,6 +446,9 @@
         width: 100%
         margin-bottom: 10px
         justify-content: space-between
+@media (max-width: 670px)
+  .container
+    max-width: 95%
 @media (max-width: 576px)
   .container
     max-width: 95%
