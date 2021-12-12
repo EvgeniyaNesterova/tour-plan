@@ -72,7 +72,8 @@
         &:hover
           text-decoration: none
   .logo
-    width: 133px
+    &-hor
+      width: 133px
   .hotel
     padding-bottom: 60px
     &-grid
@@ -178,10 +179,12 @@
       &-wrapper
         width: 46px
     &__logo
-      max-width: 90px
+      max-width: 95px
       height: 110px
       grid-row: 1 / 2
       grid-column: span 2
+      margin-bottom: 5px
+      margin-top: 0
     &__social
       &-network
         align-items: start
@@ -453,14 +456,16 @@
   .container
     max-width: 95%
   .logo
-    width: 120px
-    height: 14px
-    &__image
+    &-hor
+      width: 120px
+      height: 14px
+    &-image
       height: 14px
   .navbar
     &-top
-      padding-top: 28px
-      padding-bottom: 28px
+      align-items: flex-start
+      padding-top: 24px
+      padding-bottom: 32px
   .hotel
     &__slider
       height: 300px
@@ -494,7 +499,7 @@
   .footer
     padding-top: 68px
     &__text
-      margin-bottom: 18px
+      margin-bottom: 25px
     &-wrapper
       grid-template-columns: 1fr
       grid-gap: 32px
@@ -516,7 +521,7 @@
         margin-bottom: 15px
       &--mb
         padding-top: 0
-        margin-bottom: 23px
+        margin-bottom: 15px
     &__additional
       grid-row: 4
       grid-column: 1
@@ -527,6 +532,7 @@
       justify-self: start
       grid-row: 3
       grid-column: 1
+      margin-left: 0
     &__contact
       &-details
         width: 270px
@@ -618,8 +624,9 @@
   .container
     max-width: 279px
   .logo
-    width: 99px
-    height: 14px
+    &-hor
+      width: 99px
+      height: 14px
   .hotel
     &__slider
       height: 179px
